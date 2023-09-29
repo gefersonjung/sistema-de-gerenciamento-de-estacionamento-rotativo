@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <title>Cadastro de Vagas - Lajeado </title>
+</head>
+<body> 
+    <header>  
+        <h2><span class="azul">Stacione</span>Rotativo</h2>   
+        <nav>
+            <ul>
+                <li> <a href="home.html"> <span><i class="bi bi-house-door-fill"></i></span> Home</a></li>
+                <li> <a href="#" class="menu-principal"><i class="bi bi-plus-square-fill"></i> Cadastros</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="./cadastro-usuarios.html"><i class="bi bi-people-fill"></i> Usuários</a></li>
+                            <li><a href="#"><i class="bi bi-key-fill"></i> Alterar senha Cliente(APP)</a></li>
+                            <li><a href="#"><i class="bi bi-geo-alt-fill"></i> Cadastro Ruas/Setores</a></li>
+                            <li><a href="#"><i class="bi bi-bandaid-fill"></i> Cadastro de Isentos</a></li>
+                            <li><a href="#"><i class="bi bi-person-vcard"></i> Manutenção Dados Veículo/Placa</a></li>
+                            <li><a href="#"><i class="bi bi-flag-fill"></i> Isento por Vaga/Setor</a></li>
+                            <li><a href="#"><i class="bi bi-pin-map-fill"></i> Rotas</a></li>
+                            <li><a href="#"><i class="bi bi-exclamation-triangle-fill"></i> Motivos de baixa de IA</a></li>
+                            <li><a href="#"><i class="bi bi-phone-fill"></i> Cadastro Dispositivos/Equipamentos</a></li>                    
+                        </ul>
+                    </div>    
+                </li>
+                <li> <a href="#" class="menu-principal"><i class="bi bi-columns-gap"></i> Operacional</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-cash"></i> Quitação de AI/Notificação PA</a></li>
+                            <li><a href="#"><i class="bi bi-cash-coin"></i> Resgatar/Transferir Créditos</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i> Fechamento Consulta Ponto</a></li>
+                            <li><a href="#"><i class="bi bi-piggy-bank-fill"></i> Meu Caixa</a></li>
+                            <li><a href="#"><i class="bi bi-cone-striped"></i> Reserva de Vagas</a></li>
+                            <li><a href="#"><i class="bi bi-credit-card-2-back-fill"></i> Vincular Placa/CPF</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li> <a href="#" class="menu-principal"><i class="bi bi-camera-reels-fill"></i> Fiscalização</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-car-front-fill"></i> Cadastro de Veículos</a></li>
+                            <li><a href="#"><i class="bi bi-camera-video-fill"></i> Cadastro de Câmeras</a></li>
+                            <li><a href="#"><i class="bi bi-pin-map-fill"></i> Cadastro de Quadras/Exclusões</a></li>
+                            <li><a href="#"><i class="bi bi-x-square-fill"></i> Cadastro de Placa Inválida OCR</a></li>
+                            <li><a href="#"><i class="bi bi-eye-fill"></i> Avaliação Infrações</a></li>
+                            <li><a href="#"><i class="bi bi-eye-fill"></i> Avaliar Lotes</a></li>
+                            <li><a href="#"><i class="bi bi-car-front-fill"></i> Consulta por Placa</a></li>
+                            <li><a href="#"><i class="bi bi-geo-alt"></i> Mapa Monitoramento</a></li>
+                            <li><a href="#"><i class="bi bi-eye"></i> Analisar Imagens</a></li>                    
+                            <li><a href="#"><i class="bi bi-globe-europe-africa"></i> Mapa descocamento Veículo</a></li>                    
+                            <li><a href="#"><i class="bi bi-graph-up-arrow"></i> Relatório de Estatísticas</a></li>                    
+                            <li><a href="#"><i class="bi bi-hammer"></i> Gerar Advertência por Imagens</a></li>                    
+                            <li><a href="#"><i class="bi bi-person-video3"></i> Vídeo Chamadas</a></li>                    
+                        </ul>
+                    </div>  
+                </li>
+                <li> <a href="#" class="menu-principal"> Tempo Real</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-geo-alt-fill"></i> Mapa Ocupação de Vagas</a></li>
+                            <li><a href="#"><i class="bi bi-geo-alt-fill"></i> Mapa Ocupação de Vagas - Gerente</a></li>
+                            <li><a href="#"><i class="bi bi-check-lg"></i> Fechamento Sessão Setores</a></li>
+                            <li><a href="#"><i class="bi bi-graph-up-arrow"></i> Gráfico Ocupação por Horário</a></li>
+                            <li><a href="#"><i class="bi bi-list"></i> Consulta por Quadra/Setor</a></li>
+                            <li><a href="#"><i class="bi bi-cursor-fill"></i> Mapa Movimentação Monitores</a></li>
+                            <li><a href="#"><i class="bi bi-compass-fill"></i> Mapa Incidência Estacionamento</a></li>
+                            <li><a href="#"><i class="bi bi-geo-fill"></i> Mapa de Exibição de Vagas Cadastradas</a></li>
+                            <li><a href="#"><i class="bi bi-check-square-fill"></i> Mapa Monitoramento Parquimetro/Fiscal</a></li>                    
+                            <li><a href="#"><i class="bi bi-cart-x-fill"></i> Devedores Estacionados</a></li> 
+                        </ul>
+                    </div>
+                </li>    
+                <li> <a href="#" class="menu-principal"><i class="bi bi-cart-check-fill"></i> PDV</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-cart-plus-fill"></i> Cadastro de PDV</a></li>
+                            <li><a href="#"><i class="bi bi-currency-dollar"></i> Relatório de Movimentações</a></li>
+                            <li><a href="#"><i class="bi bi-currency-dollar"></i> Relatório de Vendas Resumido</a></li>
+                            <li><a href="#"><i class="bi bi-graph-down"></i> Relatório de Pagamentos</a></li>
+                            <li><a href="#"><i class="bi bi-graph-up"></i> Relatório de Fechamentos</a></li>
+                            <li><a href="#"><i class="bi bi-graph-up-arrow"></i> Relatório Faturamento Período</a></li>
+                            <li><a href="#"><i class="bi bi-bar-chart-line-fill"></i> Indicador de Produtividade</a></li>                                               
+                        </ul>
+                    </div>  
+                </li>
+                <li> <a href="#" class="menu-principal"><i class="bi bi-list-check"></i> Relatórios/Consultas</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-cash"></i> Faturamento Período</a></li>
+                            <li><a href="#"><i class="bi bi-currency-dollar"></i> Arrecadação Diária Resumida</a></li>
+                            <li><a href="#"><i class="bi bi-exclamation-triangle-fill"></i> Consulta Notificação/AI</a></li>
+                            <li><a href="#"><i class="bi bi-arrows-angle-contract"></i> Comparativo Rendimento P/Horário</a></li>
+                            <li><a href="#"><i class="bi bi-cash-stack"></i> Faturamento por Quadra/Setor</a></li>
+                            <li><a href="#"><i class="bi bi-postcard"></i> Tiquet Detalhado</a></li> 
+                            <li><a href="#"><i class="bi bi-geo-fill"></i> Ocupação Estacionamento</a></li>
+                            <li><a href="#"><i class="bi bi-clock-fill"></i> Arrecadação por Horário</a></li>
+                            <li><a href="#"><i class="bi bi-cash-coin"></i> Arrecadação por Operador</a></li>
+                            <li><a href="#"><i class="bi bi-cash-stack"></i> Faturamento - Completo</a></li>                    
+                            <li><a href="#"><i class="bi bi-graph-up-arrow"></i> Estatísticas de Irregularidades</a></li>                    
+                            <li><a href="#"><i class="bi bi-credit-card-2-back-fill"></i> Extrato Cliente(Cpf/Cnpj) - Uso de Saldo</a></li>                    
+                            <li><a href="#"><i class="bi bi-person-badge-fill"></i> Relatório Ponto</a></li>                    
+                            <li><a href="#"><i class="bi bi-card-checklist"></i> Movimentação Site e Aplicativo</a></li> 
+                            <li><a href="#"><i class="bi bi-clipboard2-pulse-fill"></i> Consulta Maiores Devedores</a></li>
+                            <li><a href="#"><i class="bi bi-bar-chart-line-fill"></i> Gráficos AI</a></li>
+                            <li><a href="#"><i class="bi bi-search"></i> Verificações</a></li>
+                            <li><a href="#"><i class="bi bi-search"></i> Consulta de Clientes</a></li>
+                            <li><a href="#"><i class="bi bi-car-front-fill"></i> Movimentação Veículo</a></li>
+                            <li><a href="#"><i class="bi bi-currency-dollar"></i> Arrecadação Diária(Cx Operadores)</a></li>
+                            <li><a href="#"><i class="bi bi-bar-chart-steps"></i> Relatório Rendimentos Funcionários</a></li>
+                            <li><a href="#"><i class="bi bi-clock-history"></i> Relatório por Tempo Estacionamento</a></li>
+                            <li><a href="#"><i class="bi bi-people-fill"></i> Relatório de Eventos Operador</a></li>
+                            <li><a href="#"><i class="bi bi-cone-striped"></i> Reservas de Vagas</a></li>                    
+                            <li><a href="#"><i class="bi bi-cone"></i> Faturamento por Vaga</a></li>                    
+                            <li><a href="#"><i class="bi bi-car-front-fill"></i> Consulta alterações de placa</a></li> 
+                        </ul>
+                    </div> 
+                </li>
+                <li> <a href="#" class="menu-principal"><i class="bi bi-gear"></i> Manutenção</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-card-list"></i> Consulta AI/Gerar Estorno</a></li>
+                            <li><a href="#"><i class="bi bi-clipboard2-data"></i> Consulta Estorno AI/Quit.AI</a></li>
+                            <li><a href="cadastro-vagas.html"><i class="bi bi-geo-alt-fill"></i> Gerar/Cadastrar Vagas</a></li>
+                            <li><a href="#"><i class="bi bi-printer"></i> Layout impressões</a></li>
+                            <li><a href="#"><i class="bi bi-key-fill"></i> Alterar minha senha</a></li>
+                            <li><a href="#"><i class="bi bi-cash"></i> Alteração forma de pagamento</a></li>                                               
+                        </ul>
+                    </div>  </li>
+                <li> <a href="#" class="menu-principal"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+                
+            </ul>
+        </nav>
+    </header> 
+    <section >
+        <div class="separacao"></div>
+        <div>
+            <div class="titulo">
+                <h2><i class="bi bi-geo-alt-fill"></i>Mapeamento de Vagas</h2>
+            </div>
+        </div>
+       
+        <div id="editor">
+            <div class="botao-edit"><button id="" class="edit" draggable="false" aria-label="Parar de Editar" title="Parar de Editar"
+                aria-checked="true"><p><i class="bi bi-hand-index-thumb"></i></p></button></div>
+            <div class="botao-edit"><button class="edit" draggable="false" aria-label="Parar de Editar" title="Parar de Editar"
+                aria-checked="true"><p><i class="bi bi-geo"></i></p></button></div>
+            <div class="botao-edit"><button class="edit" draggable="false" aria-label="Parar de Editar" title="Parar de Editar"
+                aria-checked="true"><p><i class="bi bi-bezier2"></i></p></button></div>
+        </div>
+            <div id="painel-editor"></div>
+            <div id="mapBox">
+                
+                <div id="map">
+                    <script type="text/javascript" src="../js/script.js"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_59ld06Np79TVknFaptG_5Wn5ldqZ7ww&callback=initMap" async defer></script> 
+                
+                </div>
+            </div>
+        
+    </section>
+  <!--  <script type="text/javascript" src="../js/script.js"></script>-->
+    
+    </body>

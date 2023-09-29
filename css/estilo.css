@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    margin: 0;
+    height: 100%;
+}
+/*---------LOGIN ------------- */
+#caixa-login{
+    border: 0.5px solid #3b3a3a;
+    box-shadow: 1px 1px 10px #3b3a3a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 50px;
+    border-radius: 15px;
+   
+
+}
+.logo-login{
+    text-align: center;
+    margin: 100px 10px 10px 5px;
+}
+
+.txt-login{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login-input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #586b88;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 400px; 
+}
+.login-user{
+    background-image: url(../imagens/user.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: calc(100% - 10px) center;
+    background-size: 25px;
+    
+}
+.login-senha{
+    background-image: url(../imagens/lock.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: calc(100% - 10px) center;
+    background-size: 25px;
+    
+}
+.button-login{
+    background-color: #055474f9;
+    border: none;
+    padding: 15px;
+    width: 100% ;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 20px;
+}
+.button-login:hover{
+    background-color: #054761f9;
+}
+
+
+
+/*INÍCIO ÁREA DO CABEÇALHO E MENU */
+header{
+    position: absolute;
+    display: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 5px 5px;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 100;
+    background: #ffffff;   
+}
+.azul{
+    color: #055474f9;
+    border-radius: 5px;
+}
+.home{
+    background: #055474f9;
+    color: #ffffff;
+    border-radius: 5px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 1px;
+    padding: 10px 1px;
+    border-radius: 5px;    
+}
+nav ul li a{
+text-decoration: none;
+color: #055474f9;
+padding: 10px;
+}
+nav ul li a:hover{    
+    border-radius: 5px;
+}
+.menu-principal:hover{
+    background: #52505018;
+    transition: 0.2s;
+}
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-2{
+    display: none;
+}
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 10px;    
+    background: #ffffff;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #2b2a2a70;
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px #666464;
+    
+}
+nav ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-left: -130px;    
+    background: #ffffff;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #2b2a2a70;
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px #666464;
+    
+}
+nav ul li:hover .sub-menu-1 ul{
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+}
+nav ul li:hover .sub-menu-2 ul{
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+}
+nav ul li:hover .sub-menu-1 ul li{      
+    text-align: left;
+    border-radius: 2px;
+    transition: 0.2s;
+    padding: 2px;       
+}
+nav ul li:hover .sub-menu-2 ul li{      
+    text-align: left;
+    border-radius: 2px;
+    transition: 0.2s;
+    padding: 2px;       
+}
+nav ul li:hover .sub-menu-1 ul li:hover{
+    background: #3f3e3e46 ;
+}
+nav ul li:hover .sub-menu-2 ul li:hover{
+    background: #3f3e3e46 ;
+}
+
+/*FIM ÁREA DO CABEÇALHO E MENU */
+
+/* INÍCIO AREA CORPO DA PÁGINA */
+
+.separacao{
+    width: 100%;
+    height: 60px;    
+}
+.titulo{    
+    height: 50px;   
+    margin-bottom: 5px; 
+    background: #055474f9;
+}
+.titulo h2{
+    color: #ffffff;
+    text-align: left;
+    margin: 15px;
+    line-height: 50px;
+}
+section{    
+    margin: 5px;
+}
+/* FIM AREA CORPO DA PÁGINA */
+
+/* PÁGINA CADASTRO DE USUARIOS */
+
+#codusuario{
+    width: 100%;
+    margin: 20px 10px;
+   
+}
+#codigo{
+    width: 90px;
+}
+#arealogin{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+}
+#arealogin input{
+    margin-right: 10px;    
+}
+input{
+    padding: 5px;
+    
+}
+#nome{
+    width: 900px;
+    
+}
+#login{
+    width: 500px;
+}
+#areasenha{
+    width: 100%;
+    margin: 30px 10px;
+    display: flex;
+}
+#areasenha input{
+    margin-right: 10px;
+}
+#senha, 
+#confirmsenha,
+#telefone{
+    width: 465px
+}
+#areaconfigusuario{
+    width: 100%;
+    margin: 30px 10px;
+    display: flex;
+}
+#areaconfigusuario select{
+    margin-right: 10px;
+    padding: 5px;
+}
+#status, #gps, #envento, #tipousuario, #fiscalizacao, #alertaparquimetro{
+    width: 195px;
+}
+#btn_salvar{
+    width: 100px;
+    border-radius: 5px;
+    background: #055474f9;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    
+}
+#btn_limpar{
+    width: 100px;
+    border-radius: 5px;
+    background: #dab903f9;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    
+}
+#btn_excluir{
+    width: 120px;
+    border-radius: 5px;
+    background: #b92804f9;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    
+}
+#btn_voltar{
+    width: 100px;
+    border-radius: 5px;
+    background: #04c04cf9;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    
+}
+/* ################################  */
+
+.cadastrar{
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    background: #055474f9;
+    color: #ffffff;
+    border: none;  
+
+}
+table{
+   width: 100%;
+   text-align: left;
+   padding: 10px;
+   border: 1px solid #3f3e3e46 ;
+   border-collapse: collapse;  
+    
+}
+table tr:hover{
+    background: #69caf02d ;
+}
+
+table tr td button{
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    background: #055474f9;
+    color: #fff;
+}
+.thusuario{
+    width:5%;
+}
+.thnome{
+    width: 30%;
+}
+.thlogin{
+    width: 10%;
+}
+.thstatus{
+    width: 10%;
+}
+.thtipouser{
+    width: 10%;
+}
+.thedit{
+    width: 5%;
+}
+
+/* ***************** CADASTRO DE VAGAS ***************  */
+#mapBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+
+}
+
+#map{
+   margin: 2px;
+   width: 99%;
+   height: 99%;
+   background: #3b3a3a;
+   
+}
+#editor{
+    width: 100px;
+    height: 32px;
+    margin-top: 10px;
+    
+}
+.botao-edit{
+    margin: 1px;
+    width:30px;
+    height: 30px;
+    float: left;
+    background: #fff;
+    border: 1px solid #999696;
+    border-radius: 3px;
+    
+}
+.edit{
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   background: #fff; 
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;   
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}
+.edit:hover{
+    background: #999696;
+    color: #fff;
+}
+#painel-editor{
+    position:fixed;
+    margin-top: 150pxpx;
+    margin-right: 5px;
+    width: 200px;
+    height: 450px;
+    background: #fff;
+    border: 1px solid #999696;
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px #999696;
+}
